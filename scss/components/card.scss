@@ -1,0 +1,34 @@
+@use "../util" as u;
+
+.card {
+  --border: #{u.rem(15)};
+
+  width: min(u.rem(315), calc(100% - u.rem(22)));
+  margin-inline: auto;
+  padding: u.rem(17.5);
+  background-color: var(--clr-netural-100);
+  border-radius: var(--border);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+
+  &__img {
+    border-radius: var(--border);
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__main-text {
+    font-size: var(--fs-22);
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent-700);
+    margin-block: u.rem(14);
+    padding: 0 u.rem(13);
+  }
+
+  &__sub-text {
+    color: var(--clr-netural-200);
+    margin-block-end: u.rem(27.5);
+    padding: 0 u.rem(18.5);
+  }
+}
